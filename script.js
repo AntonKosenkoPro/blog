@@ -1,29 +1,114 @@
-// Blog posts metadata
+// Language support
+const translations = {
+    en: {
+        'blog-title': 'My Blog',
+        'blog-subtitle': 'Sharing thoughts and ideas',
+        'footer-text': '© 2024 My Blog. Built with ❤️ for GitHub Pages.',
+        'back-to-posts': '← Back to all posts',
+        'read-more': 'Read more →',
+        'post-not-found': 'Post not found',
+        'loading-error': 'Error loading post',
+        'loading-error-desc': 'The post could not be loaded. Please make sure the Markdown file exists.'
+    },
+    ru: {
+        'blog-title': 'Мой Блог',
+        'blog-subtitle': 'Делимся мыслями и идеями',
+        'footer-text': '© 2024 Мой Блог. Создано с ❤️ для GitHub Pages.',
+        'back-to-posts': '← Назад ко всем постам',
+        'read-more': 'Читать далее →',
+        'post-not-found': 'Пост не найден',
+        'loading-error': 'Ошибка загрузки поста',
+        'loading-error-desc': 'Пост не удалось загрузить. Убедитесь, что файл Markdown существует.'
+    }
+};
+
+// Get current language from localStorage or default to 'en'
+function getCurrentLanguage() {
+    return localStorage.getItem('blog-language') || 'en';
+}
+
+// Set current language
+function setCurrentLanguage(lang) {
+    localStorage.setItem('blog-language', lang);
+    document.documentElement.lang = lang;
+    updateTranslations();
+    initializeBlog();
+}
+
+// Update all translations on the page
+function updateTranslations() {
+    const lang = getCurrentLanguage();
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+    
+    // Update language switcher buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        if (btn.getAttribute('data-lang') === lang) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+}
+
+// Blog posts metadata with multilingual support
 // Write your posts as separate .md files in the posts/ directory
-// The content will be loaded from the .md file automatically
+// Use format: post-id.en.md and post-id.ru.md
 const blogPosts = [
     {
         id: 'welcome-to-my-blog',
-        title: 'Welcome to My Blog',
         date: '2024-01-15',
-        excerpt: 'This is the first post on my new blog. I\'m excited to share my thoughts and ideas with you.'
+        title: {
+            en: 'Welcome to My Blog',
+            ru: 'Добро пожаловать в мой блог'
+        },
+        excerpt: {
+            en: 'This is the first post on my new blog. I\'m excited to share my thoughts and ideas with you.',
+            ru: 'Это первый пост в моем новом блоге. Я рад поделиться с вами своими мыслями и идеями.'
+        }
     },
     {
         id: 'getting-started-with-github-pages',
-        title: 'Getting Started with GitHub Pages',
         date: '2024-01-20',
-        excerpt: 'Learn how to deploy your static website to GitHub Pages in just a few simple steps.'
+        title: {
+            en: 'Getting Started with GitHub Pages',
+            ru: 'Начало работы с GitHub Pages'
+        },
+        excerpt: {
+            en: 'Learn how to deploy your static website to GitHub Pages in just a few simple steps.',
+            ru: 'Узнайте, как развернуть статический сайт на GitHub Pages всего за несколько простых шагов.'
+        }
     },
     {
         id: 'building-a-simple-blog',
-        title: 'Building a Simple Blog',
         date: '2024-01-25',
-        excerpt: 'A guide to creating a clean, modern blog using just HTML, CSS, and vanilla JavaScript.'
+        title: {
+            en: 'Building a Simple Blog',
+            ru: 'Создание простого блога'
+        },
+        excerpt: {
+            en: 'A guide to creating a clean, modern blog using just HTML, CSS, and vanilla JavaScript.',
+            ru: 'Руководство по созданию чистого, современного блога с использованием только HTML, CSS и ванильного JavaScript.'
+        }
     }
 ];
 
 // Initialize the blog
 document.addEventListener('DOMContentLoaded', function() {
+    // Set initial language
+    const lang = getCurrentLanguage();
+    document.documentElement.lang = lang;
+    
+    // Initialize language switcher
+    initializeLanguageSwitcher();
+    
+    // Update translations
+    updateTranslations();
+    
     // Wait for marked.js to load if needed
     if (typeof marked === 'undefined') {
         // If marked.js hasn't loaded yet, wait a bit and try again
@@ -33,11 +118,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Initialize language switcher buttons
+function initializeLanguageSwitcher() {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            setCurrentLanguage(lang);
+        });
+    });
+}
+
+// Handle hash changes for navigation
+window.addEventListener('hashchange', function() {
+    initializeBlog();
+});
+
 function initializeBlog() {
-    const path = window.location.pathname;
-    
-    // Check if we're on a post page
-    const postId = getPostIdFromPath(path);
+    // Check if we're on a post page (using hash routing)
+    const postId = getPostIdFromHash();
     
     if (postId) {
         displayPost(postId);
@@ -46,16 +144,21 @@ function initializeBlog() {
     }
 }
 
-function getPostIdFromPath(path) {
-    // Extract post ID from path like /posts/post-id.html or /post-id.html
-    const match = path.match(/\/(?:posts\/)?([^\/]+)\.html$/);
-    return match ? match[1] : null;
+function getPostIdFromHash() {
+    // Extract post ID from hash like #post-id
+    const hash = window.location.hash;
+    if (hash && hash.startsWith('#')) {
+        return hash.substring(1); // Remove the #
+    }
+    return null;
 }
 
 function displayPostList() {
     const container = document.getElementById('blog-posts');
     
     if (!container) return;
+    
+    const lang = getCurrentLanguage();
     
     // Sort posts by date (newest first)
     const sortedPosts = [...blogPosts].sort((a, b) => 
@@ -64,52 +167,76 @@ function displayPostList() {
     
     container.innerHTML = sortedPosts.map(post => `
         <article class="post-card">
-            <h2><a href="posts/${post.id}.html">${post.title}</a></h2>
+            <h2><a href="#${post.id}">${post.title[lang] || post.title.en}</a></h2>
             <div class="post-meta">
-                <span>📅 ${formatDate(post.date)}</span>
+                <span>📅 ${formatDate(post.date, lang)}</span>
             </div>
-            <p class="post-excerpt">${post.excerpt}</p>
-            <a href="posts/${post.id}.html" class="read-more">Read more →</a>
+            <p class="post-excerpt">${post.excerpt[lang] || post.excerpt.en}</p>
+            <a href="#${post.id}" class="read-more" data-i18n="read-more">${translations[lang]['read-more']}</a>
         </article>
     `).join('');
 }
 
 async function displayPost(postId) {
     const post = blogPosts.find(p => p.id === postId);
+    const lang = getCurrentLanguage();
     
     if (!post) {
-        const isInPostsDir = window.location.pathname.includes('/posts/');
-        const backLink = isInPostsDir ? '../index.html' : '/';
-        document.body.innerHTML = `<div class="container"><h1>Post not found</h1><a href="${backLink}">Back to home</a></div>`;
+        const langText = translations[lang];
+        document.body.innerHTML = `<div class="container"><h1>${langText['post-not-found']}</h1><a href="#" class="back-link">${langText['back-to-posts']}</a></div>`;
         return;
     }
     
     const container = document.getElementById('blog-posts');
     if (!container) return;
     
-    // Determine the correct path for back link and markdown file
-    const isInPostsDir = window.location.pathname.includes('/posts/');
-    const backLink = isInPostsDir ? '../index.html' : '/';
-    const markdownPath = isInPostsDir ? `${postId}.md` : `posts/${postId}.md`;
+    const postTitle = post.title[lang] || post.title.en;
+    const langText = translations[lang];
     
     // Show loading state
     container.innerHTML = `
-        <a href="${backLink}" class="back-link">← Back to all posts</a>
+        <a href="#" class="back-link">${langText['back-to-posts']}</a>
         <div class="post-content">
-            <h1>${post.title}</h1>
+            <h1>${postTitle}</h1>
             <div class="post-meta">
-                <span>📅 ${formatDate(post.date)}</span>
+                <span>📅 ${formatDate(post.date, lang)}</span>
             </div>
             <article>Loading...</article>
         </div>
     `;
     
     try {
-        // Load Markdown file
+        // Load Markdown file based on language (e.g., post-id.en.md or post-id.ru.md)
+        const markdownPath = `posts/${postId}.${lang}.md`;
         const response = await fetch(markdownPath);
+        
         if (!response.ok) {
-            throw new Error('Post not found');
+            // Fallback to English if language-specific file doesn't exist
+            const fallbackPath = `posts/${postId}.en.md`;
+            const fallbackResponse = await fetch(fallbackPath);
+            if (!fallbackResponse.ok) {
+                throw new Error('Post not found');
+            }
+            const markdown = await fallbackResponse.text();
+            const htmlContent = typeof marked !== 'undefined' 
+                ? marked.parse(markdown) 
+                : markdown;
+            
+            container.innerHTML = `
+                <a href="#" class="back-link">${langText['back-to-posts']}</a>
+                <div class="post-content">
+                    <h1>${postTitle}</h1>
+                    <div class="post-meta">
+                        <span>📅 ${formatDate(post.date, lang)}</span>
+                    </div>
+                    <article>
+                        ${htmlContent}
+                    </article>
+                </div>
+            `;
+            return;
         }
+        
         const markdown = await response.text();
         
         // Parse Markdown content to HTML
@@ -118,11 +245,11 @@ async function displayPost(postId) {
             : markdown; // Fallback if marked.js hasn't loaded yet
         
         container.innerHTML = `
-            <a href="${backLink}" class="back-link">← Back to all posts</a>
+            <a href="#" class="back-link">${langText['back-to-posts']}</a>
             <div class="post-content">
-                <h1>${post.title}</h1>
+                <h1>${postTitle}</h1>
                 <div class="post-meta">
-                    <span>📅 ${formatDate(post.date)}</span>
+                    <span>📅 ${formatDate(post.date, lang)}</span>
                 </div>
                 <article>
                     ${htmlContent}
@@ -131,18 +258,19 @@ async function displayPost(postId) {
         `;
     } catch (error) {
         container.innerHTML = `
-            <a href="${backLink}" class="back-link">← Back to all posts</a>
+            <a href="#" class="back-link">${langText['back-to-posts']}</a>
             <div class="post-content">
-                <h1>Error loading post</h1>
-                <p>The post could not be loaded. Please make sure the Markdown file exists at <code>${markdownPath}</code>.</p>
+                <h1>${langText['loading-error']}</h1>
+                <p>${langText['loading-error-desc']}</p>
             </div>
         `;
     }
 }
 
-function formatDate(dateString) {
+function formatDate(dateString, lang = 'en') {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { 
+    const locale = lang === 'ru' ? 'ru-RU' : 'en-US';
+    return date.toLocaleDateString(locale, { 
         year: 'numeric', 
         month: 'long', 
         day: 'numeric' 

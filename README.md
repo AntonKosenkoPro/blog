@@ -15,16 +15,13 @@ A clean, modern, and lightweight blog built with vanilla HTML, CSS, and JavaScri
 
 ```
 blog/
-├── index.html          # Main blog homepage
+├── index.html          # Main blog homepage (handles all routing)
 ├── styles.css          # All styling
 ├── script.js           # Blog functionality and post metadata
-├── posts/              # Blog posts (Markdown files and HTML pages)
+├── posts/              # Blog posts (Markdown files only)
 │   ├── welcome-to-my-blog.md
-│   ├── welcome-to-my-blog.html
 │   ├── getting-started-with-github-pages.md
-│   ├── getting-started-with-github-pages.html
-│   ├── building-a-simple-blog.md
-│   └── building-a-simple-blog.html
+│   └── building-a-simple-blog.md
 └── README.md           # This file
 ```
 
@@ -45,9 +42,7 @@ To add a new blog post:
 }
 ```
 
-4. Create a new HTML file in the `posts/` directory named `your-post-id.html` (copy from an existing post file and update the title in the `<title>` tag)
-
-That's it! The Markdown content will be automatically loaded from the `.md` file when someone views the post.
+That's it! The Markdown content will be automatically loaded from the `.md` file when someone views the post. Posts are accessed via hash routing (e.g., `index.html#your-post-id`).
 
 ### Writing in Markdown
 
@@ -120,7 +115,7 @@ Edit the CSS variables in `styles.css`:
 
 ### Changing the Blog Title
 
-Update the `<h1>` in `index.html` and all post HTML files in the `posts/` directory.
+Update the `<h1>` in `index.html`.
 
 ### Styling
 

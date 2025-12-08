@@ -9,8 +9,16 @@
 <body>
     <header>
         <div class="container">
-            <h1>My Blog</h1>
-            <p class="subtitle">Sharing thoughts and ideas</p>
+            <div class="header-content">
+                <div>
+                    <h1 data-i18n="blog-title">My Blog</h1>
+                    <p class="subtitle" data-i18n="blog-subtitle">Sharing thoughts and ideas</p>
+                </div>
+                <div class="language-switcher">
+                    <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                    <button class="lang-btn" data-lang="ru" aria-label="Russian">RU</button>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -22,7 +30,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 My Blog. Built with ❤️ for GitHub Pages.</p>
+            <p data-i18n="footer-text">&copy; 2024 My Blog. Built with ❤️ for GitHub Pages.</p>
         </div>
     </footer>
 
