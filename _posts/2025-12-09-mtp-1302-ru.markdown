@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Casio MTP-1302"
-date:   2025-12-09 20:30:00 +0400
+date:   2025-12-09 16:30:00 +0400
 categories: watches review
 ---
 
