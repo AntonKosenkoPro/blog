@@ -1,0 +1,181 @@
+---
+layout: post
+title:  "A Thorough Review of the Casio MTP-1302"
+date:   2025-12-09 16:30:00 +0400
+categories: reviews
+tags: [watches]
+permalink: mtp1302-en
+---
+
+## Introduction
+Why did I call this review “thorough”? Because many (if not almost all) watch reviews I’ve come across on the internet feel like the opposite to me — superficial. I found it difficult to get answers to questions that arose *before* purchasing. It was also hard to satisfy my curiosity about the technical details of how this watch works — though you can’t really expect that from mass-market reviews. I’ll try to cover both aspects here.
+
+## Model Line
+Let’s start from afar. It’s worth noting that this model has a large number of variations differing in dial design, hands, markers, case color, bracelet or strap color; the overall design, dimensions, movement, and all specifications remain the same. Creating an exhaustive list is difficult, as different regions receive different variations. The most informative source seems to be the [international Casio website](https://www.casio.com/intl/finder-result/#/?ajaxUrl=https%3A%2F%2Ffinder.api.mf.marsflag.com%2Fapi%2Fv1%2Ffinder_service%2Fdocuments%2Ff26198c1%2Fsearch&ct=&d=&doctype=all&htmlLang=en&imgsize=3&page=1&pagemax=10&q=MTP-1302&sort=0). Below, I’ll list the versions I’ve found and try to classify them.
+
+![](https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/M/MT/MTP/mtp-1302pec-2av/assets/MTP-1302PEC-2AV.png)
+
+*MTP-1302PEC-2A — the version I chose*
+
+Let’s take my version as an example:  
+**MTP-1302PEC-2A**
+
+- **M** – (Men) men’s/unisex watches of medium-large size (38+ mm in diameter). Casio also has models starting with L (Lady), which generally refers to women’s and children’s small models (30 mm diameter and below). For example, [LTP-1302](https://www.casio.com/intl/watches/casio/product.LTP-1302D-7A2V/), which look identical to the MTP-1302 but have a 30 mm case.
+
+![](https://www.casio.com/content/dam/casio/product-info/locales/europe/en-gb/timepiece/product/watch/L/LT/LTP/ltp-1302pd-2a2v/assets/LTP-1302PD-2A2V.png.transform/main-visual-sp/image.png)
+
+*LTP-1302PD-2A*
+
+- **TP** – this code refers to all Casio models belonging to the Standard line, i.e., affordable quartz three-handers. For example, the MTP-B145 belongs to the same series and somewhat resembles the Tissot PRX.
+- **1302** – the case model. In this case, a classic round case on a bracelet with a fluted bezel in the style of the Rolex Datejust.
+- **PEC** – the style code indicating a silver ion-plated case, steel bracelet, and a waffle-textured dial (similar to the mechanical Tissot PRX, though PRX uses raised squares while here they are recessed). Other codes I found online (if two codes are shown, the code varies by region):
+
+    With a steel bracelet and silver-colored case (the most numerous group):
+    - [PE, PEC](https://www.casio.com/europe/watches/casio/product.MTP-1302PE-4AV/) – waffle-texture dial, simple markers  
+    - [PD, D](https://www.casio.com/europe/watches/casio/product.MTP-1302PD-9AV/) – Sunray (Sunburst) dial, simple markers or numerals. The white dial has no texture.
+    - [DD](https://www.casio.com/intl/watches/casio/product.MTP-1302DD-5AV/) – Sunray dial, a mix of simple markers and Roman numerals
+    - [DS, PSC](https://www.casio.com/intl/watches/casio/product.MTP-1302DS-1AV/) – Mother of pearl dial, simple markers
+    - [DA](https://www.casio.com/intl/watches/casio/product.MTP-1302DA-2A1V/) – textured “matte/sandpaper-like” dial, simple markers
+
+    With alternative case/bracelet styles:
+    - [PSG](https://www.casio.com/europe/watches/casio/product.MTP-1302PSG-7AV/) – steel two-tone bracelet, silver-tone case. Sunray dial, simple markers
+    - [PGC](https://www.casio.com/europe/watches/casio/product.MTP-1302PGC-3AV/) – gold-tone bracelet and case. Sunray dial, rounded markers
+    - [PL](https://www.casio.com/europe/watches/casio/product.MTP-1302PL-5AV/) – leather strap, silver-tone case. Sunray dial, simple markers or numerals. White dial has no texture
+    - [PGL](https://www.casio.com/europe/watches/casio/product.MTP-1302PGL-9AV/) – leather strap, gold-tone case. Sunray dial, rounded markers
+
+- **2** – blue dial color. Approximate classification:
+	- 1 – black
+	- 2 – blue shades
+	- 3 – green shades
+	- 4 – red/pink
+	- 5 – brown/burgundy
+	- 6 – purple
+	- 7 – white
+	- 8 – grey
+	- 9 – yellow/beige/gold
+
+- **A** – I haven’t fully decoded this letter. Within the MTP-1302 line, it differentiates [models with Arabic numerals](https://www.casio.com/intl/watches/casio/product.MTP-1302D-7BV/) — those carry letter **B** instead. But across Casio’s entire lineup, the logic doesn’t generalize.
+
+Mandatory identifiers end here — optional ones may follow.
+
+Sometimes there is a digit at the end, e.g. MTP-1302DA-2A**1** and MTP-1302DA-2A**2**. These appear when several similar dial variations exist. In this case, the shade differs: dark blue vs light blue. Sometimes marker or hand color differs, as in MTP-1302D-7A1 vs MTP-1302D-7A2.
+
+A regional identifier is also common at the end:
+- **J**, **JF** – Japanese domestic market  
+- **V** – international models  
+
+Overall, the MTP-1302 family has around 20 variations, most of them listed on the international website.
+
+## Appearance
+
+The MTP-1302 is a fairly classical-looking watch. Let’s go through the dial, case, and bracelet.
+
+### Dial
+![](/assets/images/2025-12-09-mtp-1302/dial.jpeg)
+
+*A macro shot of the dial — open in a separate tab for detail*
+
+The dial is round, blue, with a texture reminiscent of something like Clous de Paris. To me it strongly resembles the mechanical Tissot PRX dials — they even have a [similar color](https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwc538fa47/product-pictures/59b8e7b1-d4cd-44a9-a34f-553129a984c5_T137_407_11_351_00.png). The indices are applied, likely plastic; the 3, 6, 9, and 12 markers are doubled, and the one at 3 is shortened due to the date window. Some paired markers are aligned imperfectly, but without macro shots it’s barely noticeable.
+
+![](/assets/images/2025-12-09-mtp-1302/six-oclock-mark.jpeg)
+
+*For example, the halves of the 6 o’clock marker are slightly offset vertically*
+
+The date window is perhaps the weakest element visually — the simple printed black frame doesn’t help and instead highlights the poor legibility. Contributing factors are its small size, low-contrast printing, and thin typeface.
+
+![](/assets/images/2025-12-09-mtp-1302/date-window.jpeg)
+
+*Keep in mind that two-digit dates look even smaller*
+
+The hands are made of the same material as the markers. The hour and minute hands have a slightly chorded shape and contain lume from an unspecified supplier. The lume glows green but quite dimly, remaining readable for about an hour in darkness. The downside: since only two of the three hands have lume, and none is on the markers or chapter ring, time can be read only approximately.
+
+![](/assets/images/2025-12-09-mtp-1302/glowing-hands.jpeg)
+
+*Long-exposure shot in the dark. Try guessing the time.*
+
+The seconds hand is thin, ticking once per second like most quartz watches. When the watch is held dial-up, the seconds hand hits markers precisely. When moving downward, it leads the markers by about half a division; when moving upward, alignment improves. I assume the seconds hand is slightly too light for this movement.
+
+Below 12 o’clock is the printed black CASIO logo; above 6 — WR 50M; and below 6 — a faint JAPAN MOV'T.
+
+A neat detail: the dial texture is intentionally omitted under all printed text and under the minute/second markers, keeping the layout clean and demonstrating that Casio pays attention even to budget models.
+
+![](/assets/images/2025-12-09-mtp-1302/three-oclock-mark.jpeg)
+
+*Notice the texture cutouts under the “15” marker*
+
+### Bracelet
+![](/assets/images/2025-12-09-mtp-1302/bracelet.jpeg)
+
+Moving to the bracelet. It resembles a classic Oyster style — polished center links with brushed outer links. According to the manufacturer, it is made of stainless steel, which is likely true. However, Casio’s steel alloy is completely non-magnetic (allowed for some stainless steels) and also quite soft, leading to micro-scratches appearing very quickly.
+
+![](/assets/images/2025-12-09-mtp-1302/links.jpeg)
+
+*Left: a link after 3 months of wear; right: a brand-new spare link*
+
+The links are **stamped**, not solid, meaning they are formed from a relatively thin (around 1 mm) sheet of metal. Aesthetic downside: they don’t look monolithic. Upsides: stamped bracelets are much lighter and cheaper.
+
+There are six removable links, allowing sizing for wrist circumferences from 150 to 205 mm. My 17 cm wrist required removing 4 of the 6 links. Each link weighs 3 g; the full watch weighs 103 g.
+
+The clasp is also stamped stainless steel, with minimal finishing (only the outer side is brushed). It offers four micro-adjustment positions, which is almost excessive, since the distance between the extreme settings equals exactly one full link.
+
+![](/assets/images/2025-12-09-mtp-1302/clasp.jpeg)
+
+*Made in China*
+
+To remove bracelet links you’ll need a thin metal rod or a small flat screwdriver. Micro-adjustment uses a spring bar that also requires a thin tool. SIM-tray ejector pins from smartphones work well. Too bad Casio didn’t include a tool. A detailed adjustment guide is included in the user manual.
+
+As for wearing comfort — it’s excellent. Once sized, the bracelet sits perfectly, without pressure or chafing. For the first couple of days it pulled hair, but as the bracelet stretched slightly, the gap between links increased and the issue disappeared. After it stretched, I tightened the micro-adjustment by one position.
+
+### Case
+Now for the most controversial part — the case. The manufacturer lists the case material as Ion plated. But what’s *under* the plating? Brass — a yellowish copper-zinc alloy. Brass has two undesirable properties: it’s not hypoallergenic and it corrodes more readily than stainless steel. The first is not an issue here, because the caseback (the part touching skin) is stainless steel. But the second… may be a problem, and here’s why.
+
+Based on the design, the ion plating is intended to protect the brass underneath *as long as it remains intact*. But that integrity is compromised by how the bracelet attaches to the case — the end links scratch the plating deeply, exposing the brass. This area becomes vulnerable. Corrosion risks rise especially if you sweat heavily or expose the watch to salt water — salt accelerates corrosion. Corrosion can cause the plating to bubble, exposing more brass, and the cycle worsens.  
+**BUT!** This is theoretical. After three months of wear, my watch is fine. So I’d treat the brass case as a downside only if you frequently deal with sweat and/or saltwater.
+
+![](/assets/images/2025-12-09-mtp-1302/scratch-on-brass.jpeg)
+
+*A fairly deep scratch*
+
+Visually, the plating looks like polished steel, though reflections are less crisp since the surfaces aren’t perfectly flat. On the positive side, the plating is harder than the bracelet steel and scratches less easily, so it retains its shine.
+
+The crown disappointed me — it’s small, hard to grip even with slender fingers, turns very easily, and has a short travel, making it tricky to set the time without unintentionally changing the date.
+
+The bezel is fluted, again reminiscent of Rolex. The fluting is noticeably finer and denser, so they’re impossible to confuse. The bezel uses the same ion plating as the case, does not rotate, and doesn’t protrude significantly above the crystal — purely decorative. But I like how it catches the light.
+
+The crystal is mineral — perfectly expected for this price. It’s flat, so it won’t pick up scratches as easily as a domed one. The bezel protrudes slightly, offering some protection. After three months, I see no noticeable scratches.
+
+## Movement and Functions
+
+Can you guess which movement Casio uses? Citizen!  
+Well, technically *Miyota*. Exact model is hard to confirm, since there are no markings besides the brand, but it is likely the [2115](https://miyotamovement.com/product/2115/). Overall, a very common and reliable movement.
+
+![](/assets/images/2025-12-09-mtp-1302/inside-view.jpeg)
+
+*A tiny movement inside. Open in a separate tab to explore*
+
+Accuracy is rated at ±20 seconds per month. With almost constant wrist wear, mine lost 14 seconds in 2 months. This distinction matters — the movement is not thermocompensated, and temperature inside the case is higher on the wrist than when resting on a shelf.
+
+### Note on Thermocompensation
+One important property of quartz resonators — crucial for quartz movement accuracy — is that their frequency depends on temperature.
+
+![](https://tube-time.ru/wp-content/uploads/2016/03/Идеальная-ТЧХ.jpg)
+
+The graph above shows frequency deviation versus temperature. Deviation is expressed in ppm — parts per million, i.e., 1/10000 of a percent. In simpler terms: for a 32,768 Hz resonator, each 11.57 ppm of deviation corresponds to gaining or losing 1 second per day.
+
+Going further, we can calculate from the graph that keeping monthly accuracy within ±20 seconds requires deviation below 7.7 ppm, which corresponds to a temperature range of about **12–38°C**. The closer the temperature is to **25°C**, the higher the accuracy.
+
+![](/assets/images/2025-12-09-mtp-1302/temperature.jpeg)
+
+My home thermometer shows that the temperature between the watch and my wrist is 33.2 °C. At this temperature, the accuracy should be around –8 seconds per month. Considering that part of the time (about 10%) the watch lies on a shelf where the room temperature is +23 °C, and part of the time (around 5%) I spend outside, the observed drift of –14 seconds over two months looks close to the calculated value.
+
+Essentially, thermocompensation is a way to account for this characteristic of a quartz resonator. It works by placing a temperature sensor next to the resonator, and then a special integrated circuit corrects the watch’s timekeeping. An example of such a caliber, [ETA F07.411](https://calibercorner.com/eta-caliber-f07-411/), offers much higher accuracy — ±10 seconds per **year**.
+
+### Additional functions
+Among the complications, the watch has Hacking Seconds (the seconds hand stops while setting the time, allowing for precise time set) and a Date function. The date is implemented in the simplest form — it does not account for different month lengths or leap years. Its simplicity is also indicated by the fact that the date change takes a whole hour (from 11 to 12), and according to the manual even 4 hours (from 9 PM to 1 AM), and during this period it is strongly recommended not to adjust the date.
+
+It’s also worth mentioning that, like many modern quartz calibers, this movement is resistant to magnetic fields. For me, this is very relevant because I work on a laptop every day, and laptops have magnets holding the lid, located very close to where the wristwatch sits. My mechanical watches didn’t have this feature, and it annoyed me a lot that because of this the watch would drift by several minutes per day. Mechanical watches can also be anti-magnetic, but such models are expensive; the most affordable I know of are certain Tissot PRX versions.
+
+The only maintenance the mechanism requires is battery replacement — according to the manual, this must be done every 3 years. The battery type is SR626SW.
+
+### Conclusions
+Despite the low price and its resulting compromises, I liked the watch. In my opinion, these watches offer a very good price-to-quality ratio. They look great, are practical for everyday use, and require almost no attention — just adjusting the date every 2 months and a slight time correction.
