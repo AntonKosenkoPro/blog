@@ -5,6 +5,43 @@ date:   2026-01-14 14:15:00 +0400
 permalink: wishlist
 ---
 
+# Coffee
+## DF64 Gen 2.5 Coffee Grinder
+
+**Price:** 300-350€
+
+**Motivation:** Necessary device for a lot of coffee styles (turkish, cold brew, espresso etc.) and preserves coffee ungrinded (=fresh). 
+
+**Link:** [Turin](https://www.turingrinders.com/products/turin-df64-gen-2-5-220v-single-dose-coffee-grinder-international-220v)
+
+**Alternatives:** 
+- [DF54](https://www.turingrinders.com/products/turin-df54-220v-single-dose-flat-burr-grinder-international-220v-with-eu-plug) - it's cheaper (200-250€) but DF64 have better performance and reliability. In wast of cases they are the same.
+- [Timemore C5 Pro ESP](https://sigmacoffee-eu.com/collections/timemore/products/timemore-chestnut-c5-esp-pro-manual-coffee-grinder) - manual one (95€). Not quite suitable for espresso or turkish coffee because grinding will be very time consuming.
+
+## SOY C3 Turkish Coffee Pot
+
+**Price:** 100-130€
+
+**Motivation:** To make turkish coffee. Why this pot? Because it's industry standart and all recipes adapted to this pot.
+
+**Link:** [Coffee Friend](https://www.coffeefriend.eu/p/soy-c3-turkish-coffee-pot-225-ml/)
+
+## Hario Coldbrew Jug
+
+**Price:** 30€
+
+**Motivation:** For more convinient cold brew making. 
+
+**Link:** [Skroutz](https://www.skroutz.cy/c/3707/cold-brew-equipment/m/12079/Hario.html)
+
+## La Pavoni Europiccola Lusso
+
+**Price:** ~700€ 
+
+**Motivation:** It is beautiful. Also it can make espresso and capuchino.
+
+**Link:** [La Pavoni](https://www.lapavoni.com/en/products/domestic-machines/europiccola-lusso)
+
 # Tech
 ## Belkin iPhone MagSafe Camera Mount
 **Price:** $30
